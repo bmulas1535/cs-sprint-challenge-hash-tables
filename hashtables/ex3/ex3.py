@@ -3,7 +3,7 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Create a dictionary for each array, and put it into a numbered dictionary
-    dict_of_arrays = {i : dict.fromkeys(arrays[i]) for i in range(len(arrays))}
+    dict_of_arrays = {i : dict.fromkeys(arrays[i], 1) for i in range(len(arrays))}
     # Search the next dictionary for each of the previous dictionaries' keys
     # Update the search so that only the matching keys persist
     # continue until all dictionaries have been searched
